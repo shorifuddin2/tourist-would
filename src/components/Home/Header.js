@@ -9,8 +9,8 @@ const Header = () => {
                 <p>
                     Your Next Project Won't Be <span>HORRIBLE 😫</span>
                 </p>
-                <Link to="/generator">
-                    <button>Try it now!</button>
+                <Link to="/about">
+                    <button>About Me</button>
                 </Link>
             </div>
             <div className="header-img glowing">
