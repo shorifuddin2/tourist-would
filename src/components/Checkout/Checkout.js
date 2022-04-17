@@ -25,7 +25,7 @@ const Checkout = () => {
         });
     }
     return (
-        <div className="color-container">
+        <div className="color-container mt-20">
             {state.colors.map((color, index) => (
                 <Color
                     key={`color-${index}`}

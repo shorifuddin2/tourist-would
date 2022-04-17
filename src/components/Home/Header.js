@@ -7,13 +7,13 @@ const Header = () => {
         <div className="header-container">
             <div className="header-title">
                 <p>
-                    Your Next Project Won't Be <span>HORRIBLE 😫</span>
+                    Your Tourist  the Wold <span>TOURIST</span>
                 </p>
                 <Link to="/about">
                     <button>About Me</button>
                 </Link>
             </div>
-            <div className="header-img glowing">
+            <div className="header-img glowing w-25 ">
                 <img src={demo2} alt="" />
             </div>
         </div>
