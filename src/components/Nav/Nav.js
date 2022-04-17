@@ -26,12 +26,13 @@ const Nav = () => {
                         <li>
                             <Link
                                 to="/"
-                                className="block py-2 pr-4 pl-3  rounded md:bg-transparent  md:p-0 dark:"
+                                className="block py-2 pr-4 pl-3  rounded-3 md:bg-transparent  md:p-0 dark:"
                                 aria-current="page"
                             >
                                 Home
                             </Link>
                         </li>
+                       
                         <li>
                             <Link
                                 to="/checkout"

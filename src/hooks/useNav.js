@@ -3,7 +3,7 @@ import logo from "../images/logo.png";
 
 const useNav = () => {
     //navbar scroll when active state
-    const [navbar, setNavbar] = useState(false);
+    const [navbar, setNavbar] = useState(true);
 
     //logo scroll when active
     const [navbarLogo, setNavbarLogo] = useState(logo);
