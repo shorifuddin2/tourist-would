@@ -47,16 +47,16 @@ const Features = () => {
             <p className="feature-title mt-40">
                 Services
             </p>
-            <div className=" grid md:grid-cols-2 grid-cols-1 w-5/6 mx-auto grid gap-4">
+            <div className=" grid md:grid-cols-2 grid-cols-1 w-4/6 mx-40 grid gap-4">
                 {/* <div className="features"> */}
                     {features.map((feature) => (
-                        <div className="bg-cyan-500 shadow-lg shadow-cyan-500/50 p-3">
-                            <img className="rounded-3 p-2 w-100" src={feature.img} alt="" />
+                        <div className="bg-cyan-500 shadow-lg shadow-cyan-500/50 p-2 rounded-3">
+                            <img className="rounded-3 p-2 " src={feature.img} alt="" />
                             <p className="font-bold">ID: {feature.id}</p>
                             <p className="font-bold">Name: {feature.name}</p>
                             <p className="font-bold">Price: {feature.price}</p>
                             <div className="w-100 font-bold p-2">{feature.description}</div>
-                            <div><Link className="bg-rose-500  py-1 px-2 font-bold hover:bg-cyan-600 rounded text-center" to="/checkout">Click Me</Link></div> 
+                            <div><Link className="bg-yellow-500  py-1 px-2 font-bold hover:bg-cyan-600 rounded text-center" to="/checkout">Click Me</Link></div> 
                         </div>
                     ))}
             </div>
