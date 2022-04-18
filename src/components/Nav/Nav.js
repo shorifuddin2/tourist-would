@@ -1,9 +1,10 @@
 import { signOut } from 'firebase/auth';
 import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { auth } from '../../firebase.init';
 import useNav from '../../hooks/useNav';
+
 
 const Nav = () => {
     const [user] = useAuthState(auth);
@@ -22,52 +23,61 @@ const Nav = () => {
                 </a>
 
                 <div className=" w-full md:block md:w-auto" id="mobile-menu">
-                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium  active:text-red-600">
+                    <ul className="flex flex-col  md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium  active:text-red-600">
                         <li>
-                            <Link
+                            <NavLink
                                 to="/"
-                                className="block py-2 pr-4 pl-3 bg-primary-500 active:bg-danger-600 rounded-3 md:bg-transparent  md:p-0 dark:"
-                                aria-current="page"
+                                className={({ isActive }) =>
+                                isActive ? `block  pr-3 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent` : undefined
+                                }
                             >
                                 Home
-                            </Link>
+                            </NavLink>
                         </li>
                        
                         <li>
-                            <Link
-                                to="/checkout"
-                                className="block py-2 pr-4 pl-3  active:text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
-                            >
+                            <NavLink
+                                to="checkout"
+                                    className={({ isActive }) =>
+                                    isActive ? `block  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent` : undefined
+                                    }
+                                >
                                 Checkout
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
-                            <Link
+                            <NavLink
                                 to="/blogs"
-                                className="block py-2 pr-3 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
+                                className={({ isActive }) =>
+                                    isActive ? `block  pr-3 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent` : undefined
+                                    }
                             >
                                 Blogs
-                            </Link>
+                            </NavLink>
                         </li>
 
                         <li>
-                            <Link
+                            <NavLink
                                 to="/about"
-                                className="block py-2 pr-4 pl-3 active:bg-blue-600 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent"
+                                className={({ isActive }) =>
+                                    isActive ? `block pr-3 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent` : undefined
+                                    }
                             >
                                 About
-                            </Link>
+                            </NavLink>
                         </li>
                         <li>
                             {user ? (
                                 <button onClick={() => signOut(auth)}>Logout</button>
                             ) : (
-                                <Link
+                                <NavLink
                                     to="/login"
-                                    className="block py-2 pr-4 pl-3 active:bg-blue-600 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent"
+                                    className={({ isActive }) =>
+                                    isActive ? `block  pr-3 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent` : undefined
+                                    }
                                 >
                                     Login
-                                </Link>
+                                </NavLink>
                             )}
                         </li>
                         <li>{user?.email}</li>

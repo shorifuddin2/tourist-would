@@ -64,7 +64,7 @@ const Features = () => {
             <p className="feature-title mt-40">
                 Services
             </p>
-            <div className=" grid md:grid-cols-3 grid-cols-1 w-5/6 mx-auto  gap-4">
+            <div className=" grid md:grid-cols-3 grid-cols-1 w-4/5 mx-auto  gap-5">
                 {/* <div className="features"> */}
                     {features.map((feature) => (
                         <div className="bg-cyan-500 shadow-lg shadow-cyan-500/50 p-2 rounded-3">
