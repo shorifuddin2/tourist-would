@@ -16,7 +16,7 @@
     margin-top: 10px;
     font-weight: 900;
     font-size: 1.8rem;
-    color: #1da1f2;
+    color: #e01df2;
     letter-spacing: 1px;
 }
 
@@ -38,7 +38,7 @@
 
 .login-container label {
     margin-bottom: 4px;
-    color: gray;
+    color: rgba(114, 110, 110, 0.842);
     margin: 15px 0 5px 5px;
     
 }
@@ -61,7 +61,7 @@
 .login-container button {
     color: white;
     margin-top: 20px;
-    background: #1da1f2;
+    background: #e01df2;
     height: 40px;
     border-radius: 20px;
     cursor: pointer;

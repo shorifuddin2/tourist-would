@@ -3,39 +3,39 @@ import demo from "../../images/demo3.PNG";
 const features = [
     {
         id:"1",
-        img:"",
-        name: "User Friendly",
-        price:'520',
+        img:"https://i.ibb.co/2k4LMdd/img-1.jpg",
+        name: "Amalfi Coast",
+        price:'$5310',
         description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque reiciendis architecto tempore commodi perspiciatis itaque eveniet, vero fugiat autem?",
+            "The Amalfi Coast (Italian: Costiera amalfitana) is a stretch of coastline in southern Italy overlooking the Tyrrhenian Sea and the Gulf of Salerno.Deemed an outstanding example of landscape by Unesco ...",
             button: 'click me'
                    
     },
     {
         id:"2",
-        img:"",
-        name: "User Friendly",
-        price:'520',
+        img:"https://i.ibb.co/M6VRWjg/img-3.jpg",
+        name: "Roman Forum",
+        price:'$5120',
         description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque reiciendis architecto tempore commodi perspiciatis itaque eveniet, vero fugiat autem?",
+            "The Roman Forum, also known by its Latin name Forum Romanum (Italian: Foro Romano), is a rectangular forum (plaza) surrounded by the ruins of several most important forum in ancient Rome ...",
             button: 'click me'
     },
     {
         id:"3",
-        img:"",
-        name: "User Friendly",
+        img:"https://i.ibb.co/G0vVcyw/img-4.webp",
+        name: "French Riviera",
         price:'520',
         description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque reiciendis architecto tempore commodi perspiciatis itaque eveniet, vero fugiat autem?",
+            "The French Riviera is the Mediterranean coastline of the southeast corner of France. There is no official boundary, but it is usually considered to extend The French Riviera: 8 Must-See Spots on the Côte d'Azur ...",
             button: 'click me'
     },
     {
         id:"4",
-        img:"",
-        name: "User Friendly",
+        img:`https://i.ibb.co/d00KDfx/img-5.webp`,
+        name: "Aquaventure Waterpark",
         price:'520',
         description:
-            "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Neque doloremque reiciendis architecto tempore commodi perspiciatis itaque eveniet, vero fugiat autem?",
+            "Enjoy one full day access to Aquaventure Waterpark with 105 record-breaking slides, attractions and experiences, including a private beach and the Surf's Up ...",
             button:'Click Me'
     },
 ];
