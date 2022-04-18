@@ -5,7 +5,7 @@
 
 * Project Information
 
-* Project component, hader secton footer section, surves sction, nav section link up, Home, Chackout, Blogs, About, Login and sinUp,
+* Project component, hadar section footer section, serves section, nav section link up, Home, Checkout, Blogs, About, Login and sinUp,
 
 * website is provide bootstrap 5, tailwind css, ReactJs, react router dom v6, Firebase Authentication react Animate,
 

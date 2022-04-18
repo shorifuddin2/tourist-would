@@ -6,10 +6,12 @@ import RequireAuth from "./components/Auth/RequireAuth/RequireAuth";
 import Signup from "./components/Auth/Signup/Signup";
 import Blogs from "./components/Blogs/Blogs";
 import Checkout from "./components/Checkout/Checkout";
+import Footer from "./components/Home/Footer";
 import Home from "./components/Home/Home";
 import Nav from "./components/Nav/Nav";
 
 function App() {
+    
     return (
         <div>
             <Nav />

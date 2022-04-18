@@ -3,7 +3,7 @@ import React from 'react';
 const Blogs = () => {
     return (
         <div className='container m-8 mt-20 text-center '>
-            <h1 className='feature-title'>Question page</h1>
+            <h1 className='feature-title mt-40'>Question page</h1>
 
             <div className=' bg-lightgray text-left w-50 m-8'>
                 <div className=''>

@@ -12,7 +12,7 @@ const Nav = () => {
 
     return (
         <nav
-            className={`border-gray-200 px-2 sm:px-8 py-2.5 fixed w-full top-0 z-50 transition-all ${
+            className={`border-gray-200 px-2 sm:px-8 py-2.5 fixed w-full bg-blue-500 active:bg-blue-600 top-0 z-50 transition-all ${
                 navbar && "bg-white shadow-lg"
             }`}
         >
@@ -26,7 +26,7 @@ const Nav = () => {
                         <li>
                             <Link
                                 to="/"
-                                className="block py-2 pr-4 pl-3  rounded-3 md:bg-transparent  md:p-0 dark:"
+                                className="block py-2 pr-4 pl-3 bg-blue-500 active:bg-blue-600 rounded-3 md:bg-transparent  md:p-0 dark:"
                                 aria-current="page"
                             >
                                 Home
@@ -36,7 +36,7 @@ const Nav = () => {
                         <li>
                             <Link
                                 to="/checkout"
-                                className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="block py-2 pr-4 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Checkout
                             </Link>
@@ -44,7 +44,7 @@ const Nav = () => {
                         <li>
                             <Link
                                 to="/blogs"
-                                className="block py-2 pr-4 pl-3  border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="block py-2 pr-3 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Blogs
                             </Link>
@@ -53,7 +53,7 @@ const Nav = () => {
                         <li>
                             <Link
                                 to="/about"
-                                className="block py-2 pr-4 pl-3  hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent"
+                                className="block py-2 pr-4 pl-3 active:bg-blue-600 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent"
                             >
                                 About
                             </Link>
@@ -64,7 +64,7 @@ const Nav = () => {
                             ) : (
                                 <Link
                                     to="/login"
-                                    className="block py-2 pr-4 pl-3  hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent"
+                                    className="block py-2 pr-4 pl-3 active:bg-blue-600 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent"
                                 >
                                     Login
                                 </Link>

@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import demo from "../../images/demo3.PNG";
+
 
 const features = [
     {
@@ -36,26 +38,25 @@ const features = [
         price:'520',
         description:
             "Enjoy one full day access to Aquaventure Waterpark with 105 record-breaking slides, attractions and experiences, including a private beach and the Surf's Up ...",
-            button:'Click Me'
     },
 ];
 
 const Features = () => {
     return (
         <div className="bg-fuchsia-200">
-            <p className="feature-title">
+            <p className="feature-title mt-40">
                 Services
             </p>
             <div className="feature-container">
                 <div className="features">
                     {features.map((feature) => (
                         <div className="feature">
-                            <div>{feature.img}</div>
+                            <img className="rounded-3" src={feature.img} alt="" />
                             <p>ID: {feature.id}</p>
                             <p>Name: {feature.name}</p>
                             <p>Price: {feature.price}</p>
                             <div>{feature.description}</div>
-                            <div className="bg-cyan-500 hover:bg-cyan-600 rounded text-center"><button>{feature.button}</button></div>
+                            <div><Link className="bg-cyan-500  py-1 px-2 font-bold hover:bg-cyan-600 rounded text-center" to="/checkout">Click Me</Link></div>
 
                             
                         </div>

@@ -10,7 +10,7 @@ const About = () => {
                 <img className='rounded' src={img}></img>
             </div>
            
-            <div className='col-4 mx-8 my-8 font-bold'>
+            <div className='col-4 mx-8 my-8 font-bold mt-40'>
             <p className='f-bold text-primary'>Next 6 Moth My Dream  I'm Proportional Complete Font Developer and sensitive Programer 2022 end year present my dream successfully programer fondant developer in website. I'm very actively worked this proportion,</p>
             </div>
         </div>
