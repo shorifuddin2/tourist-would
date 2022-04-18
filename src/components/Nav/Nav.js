@@ -12,7 +12,7 @@ const Nav = () => {
 
     return (
         <nav
-            className={`border-gray-400 px-2 sm:px-8 py-2.5  fixed w-full bg-orange-400 active:bg-blue-600 top-0 z-50 transition-all ${
+            className={`border-gray-400 px-2 sm:px-8 py-2.5  fixed w-full bg-orange-400 top-0 z-50 transition-all ${
                 navbar && "bg-lime-500 shadow-lg"
             }`}
         >
@@ -22,7 +22,7 @@ const Nav = () => {
                 </a>
 
                 <div className=" w-full md:block md:w-auto" id="mobile-menu">
-                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium">
+                    <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium  active:text-red-600">
                         <li>
                             <Link
                                 to="/"
@@ -36,7 +36,7 @@ const Nav = () => {
                         <li>
                             <Link
                                 to="/checkout"
-                                className="block py-2 pr-4 pl-3  active:bg-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
+                                className="block py-2 pr-4 pl-3  active:text-blue-600 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 md:dark:hover: dark:hover:bg-gray-700 dark:hover: md:dark:hover:bg-transparent dark:border-gray-700"
                             >
                                 Checkout
                             </Link>

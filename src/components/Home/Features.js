@@ -26,7 +26,7 @@ const features = [
         id:"3",
         img:"https://i.ibb.co/G0vVcyw/img-4.webp",
         name: "French Riviera",
-        price:'520',
+        price:'$5520',
         description:
             "The French Riviera is the Mediterranean coastline of the southeast corner of France. There is no official boundary, but it is usually considered to extend The French Riviera: 8 Must-See Spots on the Côte d'Azur ...",
             button: 'click me'
@@ -35,9 +35,26 @@ const features = [
         id:"4",
         img:`https://i.ibb.co/d00KDfx/img-5.webp`,
         name: "Aquaventure Waterpark",
-        price:'520',
+        price:'$4520',
         description:
-            "Enjoy one full day access to Aquaventure Waterpark with 105 record-breaking slides, attractions and experiences, including a private beach and the Surf's Up ...",
+            "Enjoy one full day access to Aquaventure Waterpark with 105 record-breaking slides, attractions and experiences, including a private beach and the Surf's Up the exclusive passes of Rayna Tours ...",
+    },
+    {
+        id:"5",
+        img:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxEwj_aB2ZWu2vJaaWo6JBmlMwEIQjW5ZUxQ&usqp=CAU",
+        name: "French Riviera",
+        price:'$6820',
+        description:
+            "The French Riviera is the Mediterranean coastline of the southeast corner of France. There is no official boundary, but it is usually considered to extend The French Riviera: 8 Must-See Spots on the Côte d'Azur ...",
+            button: 'click me'
+    },
+    {
+        id:"6",
+        img:`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlKhEb4YC_c-f4DTtVt6jR1BraKpmJ0JuZG4hjpudaug&s`,
+        name: "Shunar Ga Bangladesh",
+        price:'$7320',
+        description:
+            "Enjoy one full day access to Aquaventure Waterpark with 105 record-breaking slides, attractions and experiences, including a private beach and the Surf's Up the exclusive passes of Rayna Tours ...",
     },
 ];
 
@@ -47,11 +64,11 @@ const Features = () => {
             <p className="feature-title mt-40">
                 Services
             </p>
-            <div className=" grid md:grid-cols-2 grid-cols-1 w-4/6 mx-auto grid gap-4">
+            <div className=" grid md:grid-cols-3 grid-cols-1 w-5/6 mx-auto  gap-4">
                 {/* <div className="features"> */}
                     {features.map((feature) => (
                         <div className="bg-cyan-500 shadow-lg shadow-cyan-500/50 p-2 rounded-3">
-                            <img className="rounded-3 p-2 w-100" src={feature.img} alt="" />
+                            <img className=" p-2 w-100 h-60" src={feature.img} alt="" />
                             <p className="font-bold">ID: {feature.id}</p>
                             <p className="font-bold">Name: {feature.name}</p>
                             <p className="font-bold">Price: {feature.price}</p>

@@ -2,10 +2,10 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className='container m-8 mt-20 text-center '>
-            <h1 className='feature-title mt-40'>Question page</h1>
+        <div className='container m-8 mt-40 text-center '>
+            <h1 className='feature-title '>Question page</h1>
 
-            <div className=' bg-lightgray text-left w-50 m-8'>
+            <div className=' bg-lightgray text-left w-50 mx-auto mt-40'>
                 <div className=''>
                 <h1>1.<span className='font-bold text-danger p-2'> Question</span> Authinzution Vs Authentication..??</h1>
                 <p><small className='font-bold text-primary mx-3'>Answer: </small> Authinzution is Most of the projects I worked on use Bearer token

@@ -7,10 +7,10 @@ const About = () => {
             <h1 className='text-center  p-6 feature-title'>My Dream</h1>
             <div className='d-flex'>
             <div className=''>
-                <img className='rounded-3 w-100' src={img}></img>
+                <img className='rounded-3  mt-40' src={img}></img>
             </div>
            
-            <div className=' mx-8 my-8 font-bold mt-40'>
+            <div className=' mx-8 my-8 w-80 font-bold mt-40'>
             <p className='f-bold text-primary '>Next 6 Moth My Dream  I'm Proportional Complete Font Developer and sensitive Programer 2022 end year present my dream successfully programer fondant developer in website. I'm very actively worked this proportion,</p>
             </div>
         </div>

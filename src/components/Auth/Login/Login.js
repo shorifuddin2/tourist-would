@@ -88,8 +88,8 @@ const Login = () => {
     }, [hookError, googleError])
 
     return (
-        <div className="login-container my-40">
-            <div className="login-title">LOGIN</div>
+        <div className="login-container mt-80">
+            <div className="login-title ">LOGIN</div>
             <form className="login-form" onSubmit={handleLogin}>
                 <input type="text" placeholder="Your Email" onChange={handleEmailChange} />
                 {errors?.email && <p className="error-message">{errors.email}</p>}
