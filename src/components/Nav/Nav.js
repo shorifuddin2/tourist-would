@@ -12,21 +12,21 @@ const Nav = () => {
 
     return (
         <nav
-            className={`border-gray-200 px-2 sm:px-8 py-2.5 fixed w-full bg-blue-500 active:bg-blue-600 top-0 z-50 transition-all ${
-                navbar && "bg-white shadow-lg"
+            className={`border-gray-400 px-2 sm:px-8 py-2.5  fixed w-full bg-orange-400 active:bg-blue-600 top-0 z-50 transition-all ${
+                navbar && "bg-lime-500 shadow-lg"
             }`}
         >
             <div className="container flex flex-wrap justify-between items-center mx-auto">
-                <a href="https://flowbite.com" className="flex items-center">
+                <a href="" className="flex items-center">
                     {navbarLogo}
                 </a>
 
-                <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <div className=" w-full md:block md:w-auto" id="mobile-menu">
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-lg md:font-medium">
                         <li>
                             <Link
                                 to="/"
-                                className="block py-2 pr-4 pl-3 bg-blue-500 active:bg-blue-600 rounded-3 md:bg-transparent  md:p-0 dark:"
+                                className="block py-2 pr-4 pl-3 bg-primary-500 active:bg-danger-600 rounded-3 md:bg-transparent  md:p-0 dark:"
                                 aria-current="page"
                             >
                                 Home

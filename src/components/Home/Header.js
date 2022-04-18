@@ -4,7 +4,7 @@ import demo2 from "../../images/demo2.PNG";
 
 const Header = () => {
     return (
-        <div className="header-container">
+        <div className="header-container my-30">
             <div className="header-title">
                 <p>
                     Your Tourist  the Wold <span>TOURIST</span>
