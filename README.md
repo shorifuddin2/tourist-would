@@ -1,7 +1,7 @@
 
 * My Project Github Link: https://github.com/programming-hero-web-course-4/independent-service-provider-shorifuddin2
 
-* My Project Live Website:
+* My Project Live Website: https://magenta-raindrop-18ad7b.netlify.app/checkout
 
 * Project Information
 

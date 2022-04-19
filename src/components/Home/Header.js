@@ -10,6 +10,7 @@ const Header = () => {
                     Your Tourist  the Wold <span>TOURIST</span>
                 </p>
                 <Link to="/about">
+                    //affgit
                     <button>About Me</button>
                 </Link>
             </div>
